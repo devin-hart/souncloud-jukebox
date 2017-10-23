@@ -5,10 +5,10 @@
     client_id: client_id
   });
 
-var randomINTSC = Math.ceil(Math.random() * 100000000);
+var randomINTSC = Math.ceil(Math.random() * 100000);
 
   SC.get('/tracks/', {
-    id: randomINTSC
+    q: randomINTSC
   }).then(function(tracks) {
 
 
@@ -53,7 +53,7 @@ var randomINTSC = Math.ceil(Math.random() * 100000000);
 
     var artistURLSC = document.querySelector('.artist-url');
     artistURLSC.setAttribute('href', ('http://soundcloud.com/' + songSC.user.permalink));
-    artistURLSC.innerHTML = 'Artist URL: http://soundcloud.com/' + songSC.user.username;
+    artistURLSC.innerHTML = 'Artist URL: http://soundcloud.com/' + songSC.user.permalink;
 
     var songTitleSC = document.querySelector('.song-title');
     songTitleSC.innerHTML = 'Song Title: ' + songSC.title;
