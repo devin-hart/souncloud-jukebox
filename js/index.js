@@ -5,7 +5,7 @@
     client_id: client_id
   });
 
-var randomINTSC = Math.ceil(Math.random() * 10000);
+var randomINTSC = Math.ceil(Math.random() * 100000);
 
   SC.get('/tracks/', {
     id: randomINTSC
