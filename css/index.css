@@ -119,3 +119,11 @@ a {
 .random {
   float: right;
 }
+
+.vol-up {
+  float: left;
+}
+
+.vol-down {
+  float: left;
+}

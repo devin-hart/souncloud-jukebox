@@ -48,6 +48,26 @@ var randomINTSC = Math.ceil(Math.random() * 100000);
         player.play();
       });
 
+      var volUpSC = document.querySelector('.vol-up');
+      volUpSC.addEventListener('click', function() {
+        volUp = player.getVolume() + 0.10;
+        if (player.getVolume() <= 0.99) {
+        player.setVolume(volUp);
+      } else {
+        player.setVolume(1);
+      }
+      });
+
+      var volDownSC = document.querySelector('.vol-down');
+      volDownSC.addEventListener('click', function() {
+        volDown = player.getVolume() - 0.1;
+        if (player.getVolume() >= 0.01) {
+        player.setVolume(volDown);
+      } else {
+        player.setVolume(0);
+      }
+      });
+
     var artistSC = document.querySelector('.artist');
     artistSC.innerHTML = 'Artist: ' + songSC.user.username;
 
