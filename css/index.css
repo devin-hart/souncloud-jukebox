@@ -1,0 +1,121 @@
+* {
+  background-color: blue;
+}
+
+.header {
+  color: black;
+  background-color: lightgray;
+  width: 100vw;
+  font-family: 'Inconsolata', monospace;
+  text-align: center;
+}
+
+.textbox {
+  padding: 50px;
+  border: 2px solid lightgray;
+  color: white;
+  text-decoration: none;
+  margin-top: 50px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+}
+
+.artwork {
+  display: block;
+  margin: 0 auto;
+  box-shadow: 10px 10px black;
+  margin-top: 50px;
+}
+
+button {
+  font-family: 'Inconsolata', sans-serif;
+  margin:  auto;
+  color: black;
+  border: none;
+  background-color: lightgray;
+  font-size: 16px;
+  box-shadow: 10px 10px black;
+  outline: none;
+}
+
+button:active {
+  outline: none;
+  background-color: red;
+  color: lightgray;
+}
+
+.artist:hover {
+  background-color: white;
+  color: black;
+}
+
+a {
+  color: inherit;
+}
+
+.artist-url {
+  color: white;
+  text-decoration: none;
+}
+
+.artist-url:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.song-title:hover {
+  background-color: white;
+  color: black;
+}
+
+.song-url {
+  color: white;
+  text-decoration: none;
+}
+
+.song-url:hover {
+  background-color: white;
+  color: black;
+  text-decoration: none;
+}
+
+.description:hover {
+  background-color: white;
+  color: black;
+}
+
+.genre:hover {
+  background-color: white;
+  color: black;
+}
+
+.created:hover {
+  background-color: white;
+  color: black;
+}
+
+.play {
+  float: left;
+}
+.pause {
+  float: left;
+}
+
+.seek-back {
+  float: left;
+
+}
+
+.seek-forward {
+  float: left;
+}
+
+.random {
+  float: right;
+}
