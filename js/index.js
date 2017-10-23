@@ -5,13 +5,17 @@
     client_id: client_id
   });
 
-var randomINTSC = Math.ceil(Math.random() * 100000);
+var randomINTSC = Math.ceil(Math.random() * 100000000);
 
   SC.get('/tracks/', {
     id: randomINTSC
   }).then(function(tracks) {
 
+
+
     var songSC = tracks[0];
+
+    console.log(songSC);
 
     SC.stream('/tracks/' + songSC.id).then(function(player) {
       var playSC = document.querySelector('.play');
