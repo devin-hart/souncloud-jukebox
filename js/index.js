@@ -48,9 +48,6 @@ var randomINTSC = Math.ceil(Math.random() * 100000000);
         player.play();
       });
 
-    var artworkSC = document.querySelector('.artwork');
-    artworkSC.setAttribute('src', songSC.artwork_url.replace('large', 't300x300'));
-
     var artistSC = document.querySelector('.artist');
     artistSC.innerHTML = 'Artist: ' + songSC.user.username;
 
@@ -73,6 +70,9 @@ var randomINTSC = Math.ceil(Math.random() * 100000000);
 
     var createdSC = document.querySelector('.created');
     createdSC.innerHTML = 'Released: ' + songSC.created_at;
+
+    var artworkSC = document.querySelector('.artwork');
+    artworkSC.setAttribute('src', songSC.artwork_url.replace('large', 't300x300'));
 
 }).catch();
   });
